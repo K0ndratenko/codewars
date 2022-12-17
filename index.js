@@ -112,3 +112,98 @@
 // }
 
 // console.table(newPost(firstPost))
+
+
+
+// 17 / 12 /2022 **********************************************************************************************
+// function nextInLine(arr, item) {
+//    // Змініть код лише під цим рядком
+//  arr.push(item)
+//  arr.shift
+ 
+//    return arr.shift();
+//    // Змініть код лише над цим рядком
+//  }
+ 
+//  // Налаштування
+//  let testArr = [1, 2, 3, 4, 5];
+ 
+//  // Відобразити код
+//  console.log("Before: " + JSON.stringify(testArr));
+//  console.log(nextInLine(testArr, 6));
+//  console.log("After: " + JSON.stringify(testArr));
+
+// function welcomeToBooleans() {
+//    // Змініть код лише під цим рядком
+ 
+//    return true; // Змініть цей рядок
+ 
+//    // Змініть код лише над цим рядком
+//  }
+
+
+// Налаштування
+// function compareEquality(a, b) {
+//    if (a === b) { // Змініть цей рядок
+//      return "Equal";
+//    }
+//    return "Not Equal";
+//  }
+ 
+//  compareEquality(10, "10");
+
+
+
+
+// let a = 1;
+// let b = '1';
+// console.log(a == b)
+
+
+
+function testGreaterThan(val) {
+   if (val) {  // Змініть цей рядок
+     return "Over 100";
+   }
+ 
+   if (val.length < 10) {  // Змініть цей рядок
+     return "Over 10";
+   }
+ 
+   return "10 or Under";
+ }
+ 
+ testGreaterThan(10);
+
+
+
+
+
+ function testGreaterOrEqual(val) {
+   if (val => 20) {  // Змініть цей рядок
+     return "20 or Over";
+   }
+ 
+   if (val => 10) {  // Змініть цей рядок
+     return "10 or Over";
+   }
+ 
+   return "Less than 10";
+ }
+ 
+ testGreaterOrEqual(10);
+
+
+ function testLessOrEqual(val) {
+   if (val <= 12) {  // Змініть цей рядок
+     return "Smaller Than or Equal to 12";
+   }
+ 
+   if (val<= 24) {  // Змініть цей рядок
+     return "Smaller Than or Equal to 24";
+   }
+ 
+   return "More Than 24";
+ }
+ 
+ testLessOrEqual(10);
