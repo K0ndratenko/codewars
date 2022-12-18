@@ -101,9 +101,9 @@
 //       ...post,
 //       addedAt
 //    }
- 
+
 //   return result
-   
+
 // } 
 
 // const firstPost = {
@@ -120,14 +120,14 @@
 //    // Змініть код лише під цим рядком
 //  arr.push(item)
 //  arr.shift
- 
+
 //    return arr.shift();
 //    // Змініть код лише над цим рядком
 //  }
- 
+
 //  // Налаштування
 //  let testArr = [1, 2, 3, 4, 5];
- 
+
 //  // Відобразити код
 //  console.log("Before: " + JSON.stringify(testArr));
 //  console.log(nextInLine(testArr, 6));
@@ -135,9 +135,9 @@
 
 // function welcomeToBooleans() {
 //    // Змініть код лише під цим рядком
- 
+
 //    return true; // Змініть цей рядок
- 
+
 //    // Змініть код лише над цим рядком
 //  }
 
@@ -149,7 +149,7 @@
 //    }
 //    return "Not Equal";
 //  }
- 
+
 //  compareEquality(10, "10");
 
 
@@ -161,49 +161,150 @@
 
 
 
-function testGreaterThan(val) {
-   if (val) {  // Змініть цей рядок
-     return "Over 100";
-   }
- 
-   if (val.length < 10) {  // Змініть цей рядок
-     return "Over 10";
-   }
- 
-   return "10 or Under";
- }
- 
- testGreaterThan(10);
+// function testGreaterThan(val) {
+//    if (val) {  // Змініть цей рядок
+//      return "Over 100";
+//    }
+
+//    if (val.length < 10) {  // Змініть цей рядок
+//      return "Over 10";
+//    }
+
+//    return "10 or Under";
+//  }
+
+//  testGreaterThan(10);
 
 
 
 
 
- function testGreaterOrEqual(val) {
-   if (val => 20) {  // Змініть цей рядок
-     return "20 or Over";
-   }
- 
-   if (val => 10) {  // Змініть цей рядок
-     return "10 or Over";
-   }
- 
-   return "Less than 10";
- }
- 
- testGreaterOrEqual(10);
+//  function testGreaterOrEqual(val) {
+//    if (val => 20) {  // Змініть цей рядок
+//      return "20 or Over";
+//    }
+
+//    if (val => 10) {  // Змініть цей рядок
+//      return "10 or Over";
+//    }
+
+//    return "Less than 10";
+//  }
+
+//  testGreaterOrEqual(10);
 
 
- function testLessOrEqual(val) {
-   if (val <= 12) {  // Змініть цей рядок
-     return "Smaller Than or Equal to 12";
-   }
+//  function testLessOrEqual(val) {
+//    if (val <= 12) {  // Змініть цей рядок
+//      return "Smaller Than or Equal to 12";
+//    }
+
+//    if (val<= 24) {  // Змініть цей рядок
+//      return "Smaller Than or Equal to 24";
+//    }
+
+//    return "More Than 24";
+//  }
+
+//  testLessOrEqual(10);
+
+
+
+// Налаштування
+// const contacts = [
+//   {
+//     firstName: "Akira",
+//     lastName: "Laine",
+//     number: "0543236543",
+//     likes: ["Pizza", "Coding", "Brownie Points"],
+//   },
+//   {
+//     firstName: "Harry",
+//     lastName: "Potter",
+//     number: "0994372684",
+//     likes: ["Hogwarts", "Magic", "Hagrid"],
+//   },
+//   {
+//     firstName: "Sherlock",
+//     lastName: "Holmes",
+//     number: "0487345643",
+//     likes: ["Intriguing Cases", "Violin"],
+//   },
+//   {
+//     firstName: "Kristian",
+//     lastName: "Vos",
+//     number: "unknown",
+//     likes: ["JavaScript", "Gaming", "Foxes"],
+//   },
+// ];
+
+// function lookUpProfile(name, prop) {
+//   let count = 0
+
+//   let result = ''
+
+//   while (count < contacts.length && (result === '' || result === undefined)) {
+//     result = search(contacts[count], name, prop)
+//     count++;
+//   }
+//     if(result === undefined){
+//       return "No such contact"
+//     }
+//   return result
+// }
+// console.log(lookUpProfile("Akira", "address"))
+
+
+// function search(obj, name, prop) {
+//   //console.log(obj)
+
+//   let namebol = false;
+//   let propbol = false;
+//   let nameAns;
+//   let propAns;
+//   Object.values(obj).forEach((element) => {
+//     if (element === name) {
+//       nameAns = element
+//       namebol = true;
+//     }
+
+
+//   })
+
+//   if (namebol) {
+//     Object.keys(obj).forEach((element) => {
+//       if (element === prop) {
+//         propAns = element
+//         propbol = true;
+//       }
+//     });
+//   }
+
  
-   if (val<= 24) {  // Змініть цей рядок
-     return "Smaller Than or Equal to 24";
-   }
- 
-   return "More Than 24";
- }
- 
- testLessOrEqual(10);
+//     return (Boolean(namebol) && Boolean(propbol)) ? obj[propAns] : Boolean(namebol) ? 'No such contact' : Boolean(propbol) ? 'No such property' : undefined
+  
+
+
+
+// }
+
+
+// function randomRange(myMin, myMax) {
+//   // Змініть код лише під цим рядком
+//  // return Math.floor((Math.random() * (myMax - myMin))+myMin+1);
+//   // Змініть код лише над цим рядком
+
+// }
+// let i =0
+// while(i<40){
+// console.log(randomRange(5,10))
+// i++
+// //randomRange(5,10);}}}
+// }
+
+
+function convertToInteger(str) {
+  return  parseInt(str,2)
+}
+
+console.log(convertToInteger("10011"))
