@@ -303,8 +303,81 @@
 // }
 
 
-function convertToInteger(str) {
-  return  parseInt(str,2)
-}
+// function convertToInteger(str) {
+//   return  parseInt(str,2)
+// }
 
-console.log(convertToInteger("10011"))
+// console.log(convertToInteger("10011"))
+
+// const Student = {
+//   name: 'valera',
+//   age: 12,
+//   class: 'math'
+// }
+
+
+
+// let name1 = 'class'
+// console.log(Student[name1])
+
+// const Student = {
+//   name: 'valera',
+//   age: 12,
+//   class: 'math'
+// }
+
+
+// Object.values(Student).forEach((v) => {
+//   v += '111111111111111'
+//   console.log(v)
+
+// }
+// )
+// console.log(Student)
+
+// var hotpo = function(n){
+//   if(n === 0){
+//     return 0}; 
+//  while(n !==1 ){
+//   console.log(n)
+//  if(n% 2 === 0){
+//     n  /= 2 
+//   }else {
+//     n *= 3 
+//     n+=1
+//   }
+ 
+ 
+//    }
+
+//  return n
+// }
+// console.log(hotpo(5))
+
+
+// function arrayMadness(a, b) {
+//  let resultSumArrayOne = 0
+//  let resultSumArrayTwo = 0
+//   a.forEach(element => {
+//     element*=2
+//     resultSumArrayOne+=element
+//   });
+
+//   b.forEach((element) => {
+//     element*=3
+//     resultSumArrayTwo += element
+//   })
+//   if((resultSumArrayOne && resultSumArrayTwo) === 0 ) return false
+//   return (resultSumArrayOne>resultSumArrayTwo) ? true : false
+// }
+
+
+// console.log(arrayMadness([5,6,7],[4,5,6]))
+
+
+function saleHotdogs(n){
+  
+
+  return  (n<5) ? (n * 100) : (n>=5 && n<10) ? (n * 95) : (n >= 10) ? (n * 90) : undefined
+}
+console.log(saleHotdogs(9))
