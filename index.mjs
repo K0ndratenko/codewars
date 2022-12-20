@@ -280,9 +280,9 @@
 //     });
 //   }
 
- 
+
 //     return (Boolean(namebol) && Boolean(propbol)) ? obj[propAns] : Boolean(namebol) ? 'No such contact' : Boolean(propbol) ? 'No such property' : undefined
-  
+
 
 
 
@@ -346,8 +346,8 @@
 //     n *= 3 
 //     n+=1
 //   }
- 
- 
+
+
 //    }
 
 //  return n
@@ -375,9 +375,14 @@
 // console.log(arrayMadness([5,6,7],[4,5,6]))
 
 
-function saleHotdogs(n){
-  
+// function saleHotdogs(n){
 
-  return  (n<5) ? (n * 100) : (n>=5 && n<10) ? (n * 95) : (n >= 10) ? (n * 90) : undefined
-}
-console.log(saleHotdogs(9))
+
+//   return  (n<5) ? (n * 100) : (n>=5 && n<10) ? (n * 95) : (n >= 10) ? (n * 90) : undefined
+// }
+// console.log(saleHotdogs(9))
+
+
+
+var arthmetic = require(arthmetic);
+printMyName()
