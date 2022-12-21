@@ -384,5 +384,49 @@
 
 
 
-var arthmetic = require(arthmetic);
-printMyName()
+// var arthmetic = require(arthmetic);
+// printMyName()
+
+
+
+
+
+class Student {
+   constructor(name,age,rank){
+      this.im9 = name,
+      this.age = age,
+      this.rank = rank
+   }
+  
+   static  studentFunction() {
+      console.log('Hello I m static function')
+   }
+
+    frintName() {
+      console.log(this.im9)      
+   }
+
+}
+
+class TableStudents extends Student {
+      
+
+      constructor(name,age,rank,clas){
+         super(name,age,rank)
+         this.clas = clas
+      }
+
+      printAllinformation(){
+         console.log(`Name ${this.im9}  years ${this.age}  rank ${this.rank} class ${this.clas}`)
+      }
+
+}
+
+const newStudent = new TableStudents('maks',23,400,'B'
+
+)
+newStudent.printAllinformation()
+
+
+
+console.log(newStudent instanceof TableStudents)
