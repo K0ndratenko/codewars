@@ -391,42 +391,175 @@
 
 
 
-class Student {
-   constructor(name,age,rank){
-      this.im9 = name,
-      this.age = age,
-      this.rank = rank
-   }
+// class Student {
+//    constructor(name,age,rank){
+//       this.im9 = name,
+//       this.age = age,
+//       this.rank = rank
+//    }
   
-   static  studentFunction() {
-      console.log('Hello I m static function')
-   }
+//    static  studentFunction() {
+//       console.log('Hello I m static function')
+//    }
 
-    frintName() {
-      console.log(this.im9)      
-   }
+//     frintName() {
+//       console.log(this.im9)      
+//    }
 
-}
+// }
 
-class TableStudents extends Student {
+// class TableStudents extends Student {
       
 
-      constructor(name,age,rank,clas){
-         super(name,age,rank)
-         this.clas = clas
+//       constructor(name,age,rank,clas){
+//          super(name,age,rank)
+//          this.clas = clas
+//       }
+
+//       printAllinformation(){
+//          console.log(`Name ${this.im9}  years ${this.age}  rank ${this.rank} class ${this.clas}`)
+//       }
+
+// }
+
+// const newStudent = new TableStudents('maks',23,400,'B'
+
+// )
+// newStudent.printAllinformation()
+
+
+
+// console.log(newStudent instanceof TableStudents)
+// console.log(typeof Student)
+
+
+
+
+
+//  it("test", () => {
+//    Test.assertEquals(none([1,2,3,4,5],function(item){ return item > 5 }), true)
+//    Test.assertEquals(none([1,2,3,4,5],function(item){ return item > 4 }), false)
+
+
+
+
+// function findDifference(a, b) {
+//       return Math.abs(fun(a)-fun(b))
+// }
+
+//   function fun(a){
+//   let resultOne = 0;
+//    for(let i =0;i<a.length;i++){
+//        if(i===0){
+//          resultOne = a[i];
+//        }else{
+//        resultOne *= a[i]
+//        }
+//    }
+//    return resultOne
+// }
+
+// console.log(findDifference([21,5,4], [19,18,2]))
+
+
+// let resultx = -(x);         
+// let resulty = -(y);  
+// let result = -Math.abs(-10)
+
+// console.log(result)
+
+// function invert(array) {
+  
+//    return array.map(elem => -(elem));
+// }
+
+// console.log(invert([[0]]))
+
+
+
+
+// function sayHello(name) {
+//    return `Hello, ${name}`
+//  }
+
+
+
+
+
+
+
+// function mystery() {
+//    const  results = {
+//      sanity: 'Hello'};
+//    return results;
+//  }
+
+// Просто́е число́ — натуральное число, имеющее ровно два различных натуральных делителя.
+//  Другими словами, натуральное число {\displaystyle p}p является простым, если оно отлично от {\displaystyle 1}
+// 1 и делится без остатка только на {\displaystyle 1}1 и на само {\displaystyle p}p[1].
+
+// function isPrime(num) {
+//    if(num > 1){
+//       for(let i = 2;i<num;i++){
+//          if(num % i === 0){
+//             return false
+//          }else{
+//             continue
+//          }
+//       }
+//    }else{
+//       return false
+//    }
+//    return true
+//  }
+ 
+//  console.log(isPrime(-500))
+
+
+// function likes(names) {
+//    if(names.length === 0){
+//       return `no one likes this`
+//    }
+//   if(names.length ===1){
+//    return `${names[0]} like this`
+//   }else if(names.length === 2){
+//    return `${names[0]} and ${names[1]} like this`
+//   }else if (names.length ===3){
+//    return `${names[0]}, ${names[1]} and ${names[2]} like this`
+//   }else{
+//    return `${names[0]}, ${names[1]} and ${names.length-2} like this`
+//   }
+// }
+
+// console.log(likes(["Alex", "Jacob", "Mark", "Max"]))
+
+function duplicateEncode(word){
+   let strResult = ''
+   let arr = []
+   let c = 0
+   for(let el of word){
+   arr[c] = el
+   c++
+}
+let bl = false
+for ( let i = 0 ; i< word.length;i++){
+   for(let j = 0; j < word.length;j++){
+      if(arr[j]=== arr[i]){
+         if(bl === false){
+            bl = true
+         }else{
+            strResult += ')'
+            bl = false
+         }
       }
 
-      printAllinformation(){
-         console.log(`Name ${this.im9}  years ${this.age}  rank ${this.rank} class ${this.clas}`)
-      }
 
+   }
+  
+}
+strResult +=')'
+console.log(strResult)
 }
 
-const newStudent = new TableStudents('maks',23,400,'B'
 
-)
-newStudent.printAllinformation()
-
-
-
-console.log(newStudent instanceof TableStudents)
+console.log(duplicateEncode('recede'))
