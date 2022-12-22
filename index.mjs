@@ -576,37 +576,49 @@
 //      })
 //      .join('');
 //  }
-let result = 0
+// let result = 0
 
-function findOutlier(integers){
-      let even = 0
-      let odd = 0 
-      for(let i = 0;i<3;i++){
-        ((integers[i] %2) === 0) ? even++ : odd ++
-       }
-   // console.log(even , odd)
-   even > odd ? search('even',integers) : search('odd',integers)
-      return result
- }
+// function findOutlier(integers){
+//       let even = 0
+//       let odd = 0 
+//       for(let i = 0;i<3;i++){
+//         ((integers[i] %2) === 0) ? even++ : odd ++
+//        }
+//    // console.log(even , odd)
+//    even > odd ? search('even',integers) : search('odd',integers)
+//       return result
+//  }
 
- function search(mark,integers){
+//  function search(mark,integers){
    
-   let count = 1
-   if(mark === 'even'){
-      count = 0
-   }
- for(let i = 0 ;i < integers.length ;i++){
-   if(integers[i] % 2 !== count){
-    //  console.log(integers[i])
-      result = integers[i]
-      return integers[i]
-   }
+//    let count = 1
+//    if(mark === 'even'){
+//       count = 0
+//    }
+//  for(let i = 0 ;i < integers.length ;i++){
+//    if(integers[i] % 2 !== count){
+//     //  console.log(integers[i])
+//       result = integers[i]
+//       return integers[i]
+//    }
  
       
-   };
+//    };
 
 
 
- }
+//  }
 
- console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]))
+//  console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]))
+
+
+
+function getAge(inputString){
+  let number = Number(inputString.split(" ", 1));
+//console.log(parseInt(number))
+return parseInt(number)
+   //Number(number[0])
+}
+
+
+getAge("4 years old")
