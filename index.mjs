@@ -533,33 +533,80 @@
 
 // console.log(likes(["Alex", "Jacob", "Mark", "Max"]))
 
-function duplicateEncode(word){
-   let strResult = ''
-   let arr = []
-   let c = 0
-   for(let el of word){
-   arr[c] = el
-   c++
-}
-let bl = false
-for ( let i = 0 ; i< word.length;i++){
-   for(let j = 0; j < word.length;j++){
-      if(arr[j]=== arr[i]){
-         if(bl === false){
-            bl = true
-         }else{
-            strResult += ')'
-            bl = false
-         }
-      }
+// function duplicateEncode(word){
+//    let strResult = ''
+//    let arr = []
+//    let c = 0
+//    for(let el of word){
+//    arr[c] = el
+//    c++
+   
+// }
+//       let bl = false
+//    for(let el of word){
+//       arr.forEach((element) => { 
+//          if(el === element){
+//             if(bl === true){
+//                strResult += ')'
+//                bl = false
+//             }
+//                bl = true
+//          }
+//          if(bl === true){
+//             bl = false
+//             strResult += '('
+//          }
+         
+//       });
 
-
-   }
+//    }
+// c = 0
+//    //console.log(arr)
   
-}
-strResult +=')'
-console.log(strResult)
-}
+// }
 
 
-console.log(duplicateEncode('recede'))
+
+// function duplicateEncode(word){
+//    return word
+//      .toLowerCase()
+//      .split('')
+//      .map( function (a, i, w) {
+//        return w.indexOf(a) == w.lastIndexOf(a) ? '(' : ')'
+//      })
+//      .join('');
+//  }
+let result = 0
+
+function findOutlier(integers){
+      let even = 0
+      let odd = 0 
+      for(let i = 0;i<3;i++){
+        ((integers[i] %2) === 0) ? even++ : odd ++
+       }
+    console.log(even , odd)
+   even > odd ? search('even',integers) : search('odd',integers)
+      return result
+ }
+
+ function search(mark,integers){
+   console.log(integers.length)
+   let count = 1
+   if(mark === 'even'){
+      count = 0
+   }
+ for(let i = 0 ;i < integers.length ;i++){
+   if(integers[i] % 2 !== count){
+    //  console.log(integers[i])
+      result = integers[i]
+      return integers[i]
+   }
+ 
+      
+   };
+
+
+
+ }
+
+ console.log(findOutlier([2, 4, 0, 100, 4, 11, 2602, 36]))
