@@ -584,13 +584,13 @@ function findOutlier(integers){
       for(let i = 0;i<3;i++){
         ((integers[i] %2) === 0) ? even++ : odd ++
        }
-    console.log(even , odd)
+   // console.log(even , odd)
    even > odd ? search('even',integers) : search('odd',integers)
       return result
  }
 
  function search(mark,integers){
-   console.log(integers.length)
+   
    let count = 1
    if(mark === 'even'){
       count = 0
