@@ -613,12 +613,30 @@
 
 
 
-function getAge(inputString){
-  let number = Number(inputString.split(" ", 1));
-//console.log(parseInt(number))
-return parseInt(number)
-   //Number(number[0])
+// function getAge(inputString){
+//   let number = Number(inputString.split(" ", 1));
+// //console.log(parseInt(number))
+// return parseInt(number)
+//    //Number(number[0])
+// }
+
+
+// getAge("4 years old")
+
+
+function buildString(...template){
+  let resultStr = 'I like '
+  for( let el in template){
+    resultStr += template[el] + ', '
+    console.log(template[el])
+  }
+ let a = resultStr.substring(0, resultStr.length-2) + "!"
+
+  console.log(a)
+  //console.log(typeof template)
+  return a;
 }
 
 
-getAge("4 years old")
+
+buildString('Chocolate')
