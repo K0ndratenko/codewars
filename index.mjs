@@ -775,14 +775,68 @@
 // console.log(b,a )
 
 
-function removeFirstTwo(arr) {
-  // Змініть код лише під цим рядком
+// function removeFirstTwo(arr) {
+//   // Змініть код лише під цим рядком
   
-  const [one,two,...shorterList] = arr; // Змініть цей рядок
-  // console.log(shorterList)
-  // Змініть код лише над цим рядком
-  return shorterList;
-}
+//   const [one,two,...shorterList] = arr; // Змініть цей рядок
+//   // console.log(shorterList)
+//   // Змініть код лише над цим рядком
+//   return shorterList;
+// }
 
-const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const sourceWithoutFirstTwo = removeFirstTwo(source);
+// const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const sourceWithoutFirstTwo = removeFirstTwo(source);
+
+
+
+
+
+// const result = {
+//   success: ["max-length", "no-amd", "prefer-arrow-functions"],
+//   failure: ["no-var", "var-on-top", "linebreak"],
+//   skipped: ["no-extra-semi", "no-dup-keys"]
+// };
+// function makeList(failure) {
+//   let failureItems = [];
+
+//   failureItems =  failure.map( (el,ind) => 
+//   //console.log(`element ${el}  index${ind}`)
+//    failureItems[ind] = `<li class="text-warning">${el}</li>`
+
+  
+
+//   )
+//  return failureItems;
+// }
+
+// const failuresList = makeList(result.failure);
+
+
+
+// const getMousePosition = (x, y) => ({
+//   x: x,
+//   y: y
+// });
+// getMousePosition.x
+// console.log(getMousePosition(1,2))
+
+
+class Book {
+  constructor(author) {
+    this._author = author;
+  }
+  // getter
+  get writer() {
+    return this._author;
+  }
+  // setter
+  set writer(updatedAuthor) {
+    this._author = updatedAuthor;
+  }
+}
+const novel = new Book('maks');
+Object.freeze(novel)
+//novel._author = 'zack'
+
+console.log(novel._author)
+
