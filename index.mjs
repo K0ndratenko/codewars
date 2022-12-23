@@ -624,19 +624,165 @@
 // getAge("4 years old")
 
 
-function buildString(...template){
-  let resultStr = 'I like '
-  for( let el in template){
-    resultStr += template[el] + ', '
-    console.log(template[el])
-  }
- let a = resultStr.substring(0, resultStr.length-2) + "!"
+// function buildString(...template){
+//   let resultStr = 'I like '
+//   for( let el in template){
+//     resultStr += template[el] + ', '
+//     console.log(template[el])
+//   }
+//  let a = resultStr.substring(0, resultStr.length-2) + "!"
 
-  console.log(a)
-  //console.log(typeof template)
-  return a;
+//   console.log(a)
+//   //console.log(typeof template)
+//   return a;
+// }
+
+
+
+// buildString('Chocolate')
+
+
+
+
+// let a = {
+//   name: 'maks',
+//   age:22
+// }
+
+// let b = {
+//   rank:100500,
+//  __proto__: a,
+
+//    print1 () {
+//     console.log(b.name + b.age)
+
+//   }
+// }
+// let c = { 
+// //   class: '3B',
+// //   __proto__ : b,
+
+// // }
+// // console.log(c.hasOwnProperty('class'))
+
+
+
+// class Student {
+//   constructor(){
+    
+//   }
+//   set firstName(name){
+//     this._name = name;
+//   }
+// }
+
+// class Teacher {
+//   constructor(name,age){
+    
+//     this.name = name
+//     this.age = age
+//   }
+// }
+
+
+// let st = new Student('Maks',23);
+
+// let st1 = new Student('Gregoriy',25)
+
+
+// let teacher = new Teacher('Ana',35)
+
+
+// let n = [];
+// let x = new Number(6)
+
+// // console.log(n.__proto__ === x.__proto__)
+// // console.log(x)
+
+// let worker = {
+//   name: 'lola'
+// }
+// let worker2 = {
+//   name: 'wowa'
+// }
+
+// class man {
+//   constructor(name){
+//     this.name= name
+//   }
+// }
+// class man2 extends man {
+//   constructor(name){
+//       super(name)
+//       this.age = '25'
+//   }
+  
+// }
+// class man3 extends man2 {
+//   constructor(name){
+//       super(name)
+
+//   }
+  
+// }
+
+// let MAN = new man3('zack')
+
+
+// console.log(man3.prototype)
+
+// const s = [5, 7, 2];
+// function editInPlace() {
+   
+//      s.reverse()
+//      console.log(s)
+//    return s
+  
+   
+// }
+// editInPlace();
+
+// const obj = {
+//   name:"FreeCodeCamp",
+//   review:"Awesome"
+// };
+// let str = 'mama'
+// Object.freeze(str);
+// str = 'lala'
+// console.log(str); 
+
+
+
+
+// const HIGH_TEMPERATURES = {
+//   yesterday: 75,
+//   today: 77,
+//   tomorrow: 80
+// };
+
+// // Змініть код лише під цим рядком
+
+// const {today : highToday} = HIGH_TEMPERATURES;
+// const {tomorrow : highTomorrow} = HIGH_TEMPERATURES; 
+
+// console.log(highToday)
+
+
+//let a = 8, b = 6;
+// const arr = [8,6]
+// console.log(arr)
+// const[b,a] = arr
+// console.log(b,a )
+
+
+function removeFirstTwo(arr) {
+  // Змініть код лише під цим рядком
+  
+  const [one,two,...shorterList] = arr; // Змініть цей рядок
+  // console.log(shorterList)
+  // Змініть код лише над цим рядком
+  return shorterList;
 }
 
-
-
-buildString('Chocolate')
+const source = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const sourceWithoutFirstTwo = removeFirstTwo(source);
