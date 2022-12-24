@@ -821,22 +821,96 @@
 // console.log(getMousePosition(1,2))
 
 
-class Book {
-  constructor(author) {
-    this._author = author;
-  }
-  // getter
-  get writer() {
-    return this._author;
-  }
-  // setter
-  set writer(updatedAuthor) {
-    this._author = updatedAuthor;
-  }
+// class Book {
+//   constructor(author) {
+//     this._author = author;
+//   }
+//   // getter
+//   get writer() {
+//     return this._author;
+//   }
+//   // setter
+//   set writer(updatedAuthor) {
+//     this._author = updatedAuthor;
+//   }
+// }
+// const novel = new Book('maks');
+// Object.freeze(novel)
+// //novel._author = 'zack'
+
+// console.log(novel._author)
+
+
+
+// function fun (item){ return item > 5 }
+
+// let none1= [1,2,3,4,5]
+
+// function none(arr, fun){
+//   let result = true
+//   arr.forEach((el) => {
+//     // console.log(el)
+//    if(fun(el)){
+//     result= false;
+//     console.log('ia tyt')
+//    }
+  
+//   }
+// )
+// console.log(result)
+// //return true
+// }
+
+// console.log(none(none1,fun))
+
+
+
+// let count = 0;
+// let str = ''
+// function f3 (){
+//   for(;count<10;count++){
+//     str += ` ${count} `
+//       count++
+//       //console.log(str)
+//       f3()
+      
+//       return
+//     }
+//     console.log(str)
+//   // console.log(str)
+//   // return
+// }
+
+// f3()
+
+let wallet = 0
+let count = 0 
+function someSum(min,max){
+  
+
+  wallet += Math.floor(Math.random()* (max - min+1) + min)
+  return wallet
 }
-const novel = new Book('maks');
-Object.freeze(novel)
-//novel._author = 'zack'
 
-console.log(novel._author)
 
+function asking(){
+  if(wallet >= 300){
+    return
+  }
+someSum(5,40)
+asking()
+count++
+
+}
+
+
+
+// asking()
+// console.log(count)
+// console.log(wallet)
+
+
+
+
+wallet = (Math.random())
+console.log(wallet)
