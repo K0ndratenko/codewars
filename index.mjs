@@ -881,36 +881,123 @@
 //   // return
 // }
 
-// f3()
+// // f3()
 
-let wallet = 0
-let count = 0 
-function someSum(min,max){
+// let wallet = 0
+// let count = 0 
+// function someSum(min,max){
   
 
-  wallet += Math.floor(Math.random()* (max - min+1) + min)
-  return wallet
-}
+//   wallet += Math.floor(Math.random()* (max - min+1) + min)
+//   return wallet
+// }
 
 
-function asking(){
-  if(wallet >= 300){
-    return
-  }
-someSum(5,40)
-asking()
-count++
-
-}
-
-
-
+// function asking(){
+//   if(wallet >= 300){
+//     return
+//   }
+// someSum(5,40)
 // asking()
-// console.log(count)
-// console.log(wallet)
+// count++
+
+// }
+
+
+
+// // asking()
+// // console.log(count)
+// // console.log(wallet)
 
 
 
 
-wallet = (Math.random())
-console.log(wallet)
+// wallet = (Math.random())
+// console.log(wallet)\\
+
+
+// let extractStr = "Extract the word 'coding' from this string.";
+// let codingRegex = /coding the/; // Змініть цей рядок
+// let result = extractStr.match(codingRegex); 
+// console.log(typeof(result))
+
+
+// let twinkleStar = "Twinkle, twinkle, little star";
+// let starRegex = /Twinkle/ig; // Змініть цей рядок
+// let result = twinkleStar.match(starRegex);
+
+// console.log(result)
+// console.log(typeof result)
+// let arr = []
+// console.log(typeof arr)
+
+
+
+// let quoteSample = "Beware of bugs in the above code; I have only proved it correct, not tried it.";
+// let vowelRegex = /[aeiou]/ig; // Змініть цей рядок
+// let result = quoteSample.match(vowelRegex); // Змініть цей рядок
+
+// console.log(result)
+
+
+// let quoteSample = "The quick brown fox jumps over the lazy dog.";
+// let alphabetRegex = /[e-q]ig/; // Змініть цей рядок
+// let result = quoteSample.match(alphabetRegex); // Змініть цей рядок
+
+
+// console.log(result)
+
+//  let crim = 'P1P5P4CCCcP2P6P3'
+// let c = 'C'
+
+// let reCriminals = /[C*?]/gi;
+// let result = crim.match(reCriminals)
+// console.log(result)
+
+
+
+// let username = "BadUs3rnam3";
+// let userCheck = /^[a-z]{2}[a-z]*\d*$/i; // Змініть цей рядок
+// let result = userCheck.test(username);
+// console.log(result)
+
+
+// let quit = "qu";
+// let noquit = "qt";
+// let quRegex= /q(?=u)/;
+// let qRegex = /q(?!u)/;
+// // console.log(quit.match(quRegex)[0])
+// // console.log(noquit.match(qRegex)[0])
+// //noquit.match(qRegex);
+
+
+// console.log(quRegex.test(quit))
+// console.log(qRegex.test(noquit))
+
+
+
+
+// let str = "one two three";
+// let fixRegex = /([a-z]{3}\s[a-z]{3}\s[a-z]{5})/; // Змініть цей рядок
+
+// let replaceText = str.match(fixRegex); // Змініть цей рядок
+// console.log(replaceText)
+// let result = str.replace(fixRegex,'$3 $2 $1');
+// console.log(result)
+
+
+let hello = "   Hello, World!  ";
+let wsRegex = /\S*\S*$/gi; // Змініть цей рядок
+let result2 = hello.match(wsRegex)
+
+
+ console.log(result2)
+
+// let result = hello.replace(wsRegex); 
+
+
+
+// let str = "one two three";
+// let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+// let replaceText = "$3 $2 $1"; // Change this line
+// let result = str.replace(fixRegex, replaceText);
