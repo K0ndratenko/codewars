@@ -986,12 +986,12 @@
 // console.log(result)
 
 
-let hello = "   Hello, World!  ";
-let wsRegex = /\S*\S*$/gi; // Змініть цей рядок
-let result2 = hello.match(wsRegex)
+// let hello = "   Hello, World!  ";
+// let wsRegex = /\S*\S*$/gi; // Змініть цей рядок
+// let result2 = hello.match(wsRegex)
 
 
- console.log(result2)
+//  console.log(result2)
 
 // let result = hello.replace(wsRegex); 
 
@@ -1001,3 +1001,37 @@ let result2 = hello.match(wsRegex)
 // let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
 // let replaceText = "$3 $2 $1"; // Change this line
 // let result = str.replace(fixRegex, replaceText);
+
+
+
+
+
+
+// const b = ['Hi','hello']
+// //const a = / /
+// console.log(b.indexOf(/hello/ig))
+
+
+// function lovefunc(flower1, flower2){
+//    let check = flower1 % 2;
+//    return (flower2 % 2 !== check) ? true : false
+//  }
+
+
+//  console.log(lovefunc(5,4))
+
+
+// let str = '123'
+// let arr =str.split('')
+// arr.reverse()
+// str = arr.join('')
+// console.log(str)
+
+function getAverage(marks){
+  let result = marks.reduce((accum,item) => {
+    return accum += item
+   })
+   return  Math.floor(result / marks.length)
+}
+
+console.log(getAverage([2,2.5,2.2,2]))
