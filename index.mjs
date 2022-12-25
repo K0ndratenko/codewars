@@ -1027,11 +1027,99 @@
 // str = arr.join('')
 // console.log(str)
 
-function getAverage(marks){
-  let result = marks.reduce((accum,item) => {
-    return accum += item
-   })
-   return  Math.floor(result / marks.length)
-}
+// function getAverage(marks){
+//   let result = marks.reduce((accum,item) => {
+//     return accum += item
+//    })
+//    return  Math.floor(result / marks.length)
+// }
 
-console.log(getAverage([2,2.5,2.2,2]))
+// console.log(getAverage([2,2.5,2.2,2]))
+
+
+// let base ={ 
+// nglish: 'Welcome',
+// czech: 'Vitejte',
+// danish: 'Velkomst',
+// dutch: 'Welkom',
+// estonian: 'Tere tulemast',
+// finnish: 'Tervetuloa',
+// flemish: 'Welgekomen',
+// french: 'Bienvenue',
+// german: 'Willkommen',
+// irish: 'Failte',
+// italian: 'Benvenuto',
+// latvian: 'Gaidits',
+// lithuanian: 'Laukiamas',
+// polish: 'Witamy',
+// spanish: 'Bienvenido',
+// swedish: 'Valkommen',
+// welsh: 'Croeso'
+// }
+
+
+
+// function greet(language) {
+// for(let key in base){
+//    if(key === language){
+//       return base[key]
+//    }
+// }
+// return 'Welcome'
+
+// }
+
+
+
+
+// function areYouPlayingBanjo(name) {
+//  let regex = /^r/i
+ 
+//    return (regex.test(name)) ? `${name} plays banjo` : `${name} does not play banjo`
+//  }
+
+
+//  console.log(areYouPlayingBanjo('ringo'))
+
+
+// function preFizz(n) {
+//    return `Array should be from 1 to ${n.length}`
+// }
+// console.log(preFizz([1,2,3,4,5]))
+
+
+// function problem(x){
+//    if(typeof x !== 'string'){
+//       console.log('it isn t string')
+//       return x * 50 +6
+//    }
+   
+//       return 'Error'
+//  }
+// problem('sdf')
+
+
+// String.prototype.isUpperCase = function() {
+//    //console.log(this)
+//    let regex = /\b[A-Z]+\b/
+//    let arr = regex.test(this)
+   
+//    console.log(arr)
+//  //  return (arr.length === this.length) ? true : false
+//  }
+
+//  let str = 'aI AM DONALD'
+ 
+//  console.log(str.isUpperCase())
+
+
+function past(h, m, s){
+ let  result = 0
+   result += s * 1000
+   result += m * 60 * 1000
+   result +=h * 3600 * 1000
+
+   return result
+ }
+
+ console.log(past(1,1,1))
