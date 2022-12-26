@@ -1113,13 +1113,87 @@
 //  console.log(str.isUpperCase())
 
 
-function past(h, m, s){
- let  result = 0
-   result += s * 1000
-   result += m * 60 * 1000
-   result +=h * 3600 * 1000
+// function past(h, m, s){
+//  let  result = 0
+//    result += s * 1000
+//    result += m * 60 * 1000
+//    result +=h * 3600 * 1000
 
-   return result
- }
+//    return result
+//  }
 
- console.log(past(1,1,1))
+// //  console.log(past(1,1,1))
+
+// let arr = [0,0]
+// function countPositivesSumNegatives(input) {
+//    let result = []
+//   input.filter(item => {
+//          if(Math.sign(item)===1){
+//             result[0]++
+//          }
+//   })
+//   input.map(item => {
+//    if(Math.sign(item)===-1){
+//       result[1] += item
+//       // console.log(result[1])
+//    }
+// })
+
+//   return result
+  
+  
+  
+// }
+
+
+// console.log(countPositivesSumNegatives(arr))
+
+
+// function countPositivesSumNegatives(input) {
+//    let el = input.find(item => {
+//       if(item === null){
+//          return item
+//       }
+//    })
+//    if(el !== null) {
+
+
+//     let result = [0,0]
+//    input.filter(item => {
+//           if(Math.sign(item)===1){
+//              result[0]++
+//           }
+//    })
+//    input.map(item => {
+//     if(Math.sign(item)===-1){
+//        result[1] += item
+//        // console.log(result[1])
+//     }
+//  })
+//      if(result[0] === 0 && result[1] ===0){
+//        return result = []
+//      }
+//    return result
+   
+    
+// }
+//  }
+ 
+
+
+
+// let number = 'Мерцай, мерцай, звездочка,\nКак мне интересно, кто ты. \nВверху над миром, так высоко, \nПодобно алмазу в небе.'
+// let regex = number.replace(/\n/g,'')
+
+// console.log(regex)
+
+
+// let arr = [1,1,1,1,1,1,1]
+// arr.fill(2,0,5)
+// console.log(arr)
+
+
+let str = "one two three";
+//let fixRegex = /([a-z]{3,}) (\1) (\1))/; // Змініть цей рядок
+let replaceText = str.replace(/(\w+)\s(\w+)\s(\w+)/,'$3 $2 $1');
+console.log(replaceText)
