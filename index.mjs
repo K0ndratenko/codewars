@@ -1250,13 +1250,62 @@
 //  }
 // console.log(first(arr,2))
 
-function century(year) {
-   if(/(?:\d?)\d+00\b/.test(year)){
-     console.log('tyt')
-      return  Math.floor(year / 100)
-   }
-   return Math.floor(year / 100)+1;
+// function century(year) {
+//    if(/(?:\d?)\d+00\b/.test(year)){
+//      console.log('tyt')
+//       return  Math.floor(year / 100)
+//    }
+//    return Math.floor(year / 100)+1;
 
 
+//  }
+// console.log(century(870041))
+
+
+
+// let arr = {
+//    1: "Sunday",
+//    2:"Monday",
+//    3:"Tuesday",
+//   4:"Wednesday",
+//   5:"Thursday",
+//   6:"Friday",
+//   7:"Saturday",
+//   }
+//   function whatday(num) { 
+  
+//     for(let key in arr){
+//    //console.log(key)
+//       if(num==key){
+         
+//          return arr[key]
+//       }
+//    }
+//    return `"Wrong, please enter a number between 1 and 7"`
+// }
+
+//   console.log(whatday(20))
+
+
+
+
+// function findAverage(array) {
+//    if(array.length === 0){
+//       return NaN
+//    }
+//    let result = 0 
+//   let res = array.reduce((accum,item) => {
+//    result += item
+//    //  return accum
+// },0)
+// //return res
+// return result / array.length
+//  }
+//  console.log(findAverage([]))
+
+
+function makeNegative(num) {
+   return (Math.sign(num) === 1) ? -num : num
  }
-console.log(century(870041))
+
+ console.log(makeNegative(-5))
