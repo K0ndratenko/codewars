@@ -1193,7 +1193,70 @@
 // console.log(arr)
 
 
-let str = "one two three";
-//let fixRegex = /([a-z]{3,}) (\1) (\1))/; // Змініть цей рядок
-let replaceText = str.replace(/(\w+)\s(\w+)\s(\w+)/,'$3 $2 $1');
-console.log(replaceText)
+// let str = "one two three";
+// //let fixRegex = /([a-z]{3,}) (\1) (\1))/; // Змініть цей рядок
+// let replaceText = str.replace(/(\w+)\s(\w+)\s(\w+)/,'$3 $2 $1');
+// console.log(replaceText)
+
+
+// let arrayMy = ["1:0","2:0","3:0","4:0","2:1","1:3","1:4","2:3","2:4","3:4"]
+// function points(games) {
+   
+ 
+//  return games.reduce((accum,item) => {
+//      // console.log(item)
+//      let result = item.split(':')
+//       //console.log(result)
+//       if(result[0]>result[1]){
+//          accum +=3
+//       }else if(result[0] === result[1]){
+//          accum +=1
+//       }
+//       return accum
+//  },0)
+   
+// }
+// console.log(points(arrayMy))
+
+
+// function numberToPower(number, power){
+//    return Math.pow(number,power);
+//     // Code here
+//   }
+
+//   console.log(numberToPower(10,4))
+
+
+// function numberToPower(number, power){
+//   let   subNumber = number
+//   let result = 0
+
+//    for(let i = 0;i<power;i++){
+//      result = subNumber * number
+//      subNumber = result
+//    }
+//    if(power === 0){
+//       return 1
+//    }
+//    return result
+
+//    }
+// //    console.log(numberToPower(3,1))
+
+// var arr = ['a', 'b', 'c', 'd', 'e'];
+// function first(arr, n) {
+//    return arr.slice(0,n)
+
+//  }
+// console.log(first(arr,2))
+
+function century(year) {
+   if(/(?:\d?)\d+00\b/.test(year)){
+     console.log('tyt')
+      return  Math.floor(year / 100)
+   }
+   return Math.floor(year / 100)+1;
+
+
+ }
+console.log(century(870041))
