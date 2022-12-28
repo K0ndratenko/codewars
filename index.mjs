@@ -1304,8 +1304,141 @@
 //  console.log(findAverage([]))
 
 
-function makeNegative(num) {
-   return (Math.sign(num) === 1) ? -num : num
- }
+// function makeNegative(num) {
+//    return (Math.sign(num) === 1) ? -num : num
+//  }
 
- console.log(makeNegative(-5))
+//  console.log(makeNegative(-5))
+
+
+// class Dog {
+//   constructor(name, age, gender, species, size, master, loyal) {
+//     this.name = name;
+//     this.age = age;
+//     this.gender = gender;
+//     this.species = species;
+//     this.legs = 4;
+//     this.size = size;
+//     this.master = master;
+//     this.loyal = loyal;
+//   }
+// }
+
+// class Labrador extends Dog{
+//   constructor(name, age, gender, species, size, master, loyal) {
+//     super(name, age, gender, species, size, master, loyal)
+//     this.name = name;
+//     this.master = master;
+//     this.age = age;
+//     this.gender = gender;
+   
+//   }
+// }
+
+
+// //white" or "yellow" or "purple" or "red
+
+// var Ghost = function() {
+//     let number =  Math.floor(Math.random() * 4)
+//     console.log(number)
+//     if(number === 0){
+//       return "white"
+//     }else if(number ===1){
+//       return 'yellow'
+//     }else if(number === 2){
+//       return 'purple'
+//     }else{
+//       return 'red'
+//     }
+// };
+
+// class Host {
+
+//     constructor(){
+
+//  this.color = Ghost()
+  
+// }
+// }
+
+// let G = new Host()
+
+
+
+
+
+
+// var f = function() {
+//   let number =  Math.floor(Math.random() * 4)
+//  // console.log(number)
+//   if(number === 0){
+//     return "white"
+//   }else if(number ===1){
+//     return 'yellow'
+//   }else if(number === 2){
+//     return 'purple'
+//   }else{
+//     return 'red'
+//   }
+// };
+
+// class GHost {
+
+//   constructor(){
+
+// this.color = f()
+
+// }
+// }
+
+// let G = new GHost()
+
+
+
+
+// function NameMe(first, last) {
+//   this.firstName = first;
+//   this.lastName = last;
+//   this.name = this.firstName + ' ' + this.lastName;
+  
+// }
+
+
+// let nM = new NameMe('kostia','kondratenko')
+// console.log(nM.firstName)
+// console.log(nM.lastName)
+// console.log(nM.name)
+// nM.
+
+
+// function isPalindrome(x) {
+//   x = x.toLowerCase()
+//   let arr = x.split('')
+//   let arr2 = arr.reverse()
+//   console.log(arr)
+//   console.log(arr2)
+//   return arr.every( (elem,index) => {
+//      if(x[index] === arr[index]){
+//       return true
+//      }else{
+//       return false
+//      }
+//   })
+// }
+
+// console.log(isPalindrome(''))
+
+
+// function validateUsr(username) {
+//   let res =  /\b[a-z_\d]{4,16}\b/.test(username) 
+//   return res
+// }
+
+// console.log(validateUsr("asd43_34"))
+
+
+
+function stringClean(s){
+  return s.match(/[\D]*/gi).join('');
+}
+console.log(stringClean('! !'))
