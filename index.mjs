@@ -1438,7 +1438,80 @@
 
 
 
-function stringClean(s){
-  return s.match(/[\D]*/gi).join('');
+// function stringClean(s){
+//   return s.match(/[\D]*/gi).join('');
+// }
+// console.log(stringClean('! !'))
+
+
+
+// function lowercaseCount(str){
+//     let result = 0
+//   let arr = str.match(/[a-z]*/g)
+//   for(let i = 0;i<arr.length;i++){
+//     if(arr[i]){
+//       result += arr[i].length
+//     }
+
+
+
+//   }
+ 
+ 
+ 
+//   return result
+// }
+
+// console.log(lowercaseCount('abcABC123!@€£#$%^&*(az)_-+=}{[]|\':;?/>.<,~'))
+
+
+
+
+// let s = '   sss '
+// s.trim()
+// console.log(s.trim())
+// console.log(s)
+
+
+
+class Ship{
+   constructor(draft,crew){
+   this.draft = draft;
+   this.crew = crew;
 }
-console.log(stringClean('! !'))
+ isWorthIt (){
+   console.log(this.draft - this.crew)
+      return ((this.draft - this.crew) <20) ? false : true
+
+    }
+  }
+
+  
+let somShip = new Ship(133,84)
+console.log(somShip.isWorthIt())
+
+
+
+
+--select concat(first_name,salary) from employees;
+
+--select trunc(hire_date,'MM') from employees;
+--select RPAD(First_Name,10,'$'),LPAD(Last_name,15,'!') from employees;
+
+--select first_name,instr(first_name,'a',2) from employees;
+
+
+--select trim('!' from '!!!HELLO!! MY FRIEND!!!!!!!!') from dual;
+--select salary,salary*3.1415,round(salary*3.1415,0),round(salary*3.1415/1000,0) 
+--from EMployees;
+
+--select hire_date ,add_months(hire_date,6),last_day(hire_date) from employees;
+
+--select next_day('20-SEP-19',1) from dual;
+--select Hire_date from employees;
+
+--select DECODE(first_name,'%b%',first_name, 'tyt') from employees;
+--select first_name from employees where instr(LOWER(first_name),'a',1,2) > 0;
+--select SUBSTR(DEPARTMENT_NAME,1,INSTR(department_name,' ')),department_name
+--from departments where INSTR(department_name,' ')>0
+select first_name, SUBSTR(first_name,2,LENGTH(first_name)-2) from employees
