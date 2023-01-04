@@ -1520,7 +1520,16 @@
 
 
 
-let myArray = [1, 2, 3];
-let arraySum = myArray.reduce(previous, current => 
-   previous += current);
-console.log(`Sum of array values is: ${arraySum}`);
+// let myArray = [1, 2, 3];
+// let arraySum = myArray.reduce(previous, current => 
+//    previous += current);
+// console.log(`Sum of array values is: ${arraySum}`);
+
+// --select (365*(24*60)) * 100 from dual;
+
+// --select 'Peter s dog is very clever'  from dual;
+// --select distinct first_name from employees
+// --select first_name || '(' || Department_id || ')' from employees
+// --select employee_id,email,hire_date,hire_date-7 as One_week_before from employees
+// --select first_name,department_id,salary from employees;
+// --select * from regions
