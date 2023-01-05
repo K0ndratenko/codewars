@@ -1533,3 +1533,8 @@
 // --select employee_id,email,hire_date,hire_date-7 as One_week_before from employees
 // --select first_name,department_id,salary from employees;
 // --select * from regions
+
+// select first_name,salary,salary + to_number('$12,345.55','$99,999.99')
+// as NewSalary from employees
+// select first_name,salary,to_char(salary + nvl((salary*commission_pct),0),
+// '$99,999.99') as Newsalary from employees
