@@ -1537,4 +1537,13 @@
 // select first_name,salary,salary + to_number('$12,345.55','$99,999.99')
 // as NewSalary from employees
 // select first_name,salary,to_char(salary + nvl((salary*commission_pct),0),
-// '$99,999.99') as Newsalary from employees
+// // '$99,999.99') as Newsalary from employees
+// select substr(first_name,1,1),count(*) from employees
+// group by substr(first_name,1,1)
+// having count(*) > 0
+// // order by count(*)
+// select department_id,salary,count(*) from employees
+// group by department_id,salary;
+// select to_char(hire_date,'DD'),count(*) from employees
+// group by to_char(hire_date,'DD')
+// order by count(*) desc;
