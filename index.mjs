@@ -1547,3 +1547,35 @@
 // select to_char(hire_date,'DD'),count(*) from employees
 // group by to_char(hire_date,'DD')
 // order by count(*) desc;
+// --select location_id from departments
+// select count(*),r.region_name from employees e
+// JOIN departments d ON (e.department_id = d.department_id)
+// JOIN locations l ON (d.location_id = l.location_id)
+// JOIN countries c ON(l.country_id = c.country_id)
+// JOIN regions r ON(c.region_id = r.region_id)
+// group by r.region_name
+
+
+// select e.first_name,e.last_name,d.department_name,e.job_id,
+// l.street_address,c.country_name,r.region_name from employees e
+// JOIN departments d ON (e.department_id = d.department_id)
+// JOIN locations l ON (d.location_id = l.location_id)
+// JOIN countries c ON (l.country_id = c.country_id)
+// JOIN regions r ON (c.region_ID = r.region_id);
+// select emp2.first_name, count(*) from employees emp1
+// JOIN employees emp2 ON (emp1.manager_id = emp2.employee_id)
+// group by emp2.first_name
+// HAVING count(*) > 6;
+
+
+// select d.department_name,count(*) from employees e 
+// JOIN departments d USING(department_id)
+// group by d.department_name
+// Having count(*) > 30
+
+
+// select e.department_id from employees e 
+// left Join departments d ON(e.department_id != d.department_id)
+// where e.first_name is null
+
+
